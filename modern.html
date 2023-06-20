@@ -1,74 +1,147 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <title>Dimulo Developer Portal</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* Style the header */
+    .header {
+      background-color: #7289da;
+      padding: 20px;
+      text-align: center;
+    }
 
-    <title>Dimulo Developer Portal</title>
+    /* Style the top navigation bar */
+    .navbar {
+      overflow: hidden;
+      background-color: #333;
+    }
 
-    <meta content="Dimulo Developer Portal" property="og:title" />
+    /* Style the navigation bar links */
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 14px 20px;
+    }
 
-    <meta content="Join Dimulo today and get access to exclusive perks and features." property="og:description" />
+    /* Change color on hover */
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
 
-    <meta content="https://dimulo.com/developer-portal" property="og:url" />
+    /* Style the main content */
+    .main {
+      margin-left: 160px; /* Same width as the sidebar + left position in px */
+      padding: 0px 10px;
+    }
 
-    <meta content="https://dimulo.com/dimulo-logo.png" property="og:image" />
+    /* Style the main section */
+    .section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
 
-    <meta content="#43B581" data-react-helmet="true" name="theme-color" />
+    /* Style the cards */
+    .card {
+      background-color: white;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      width: 300px;
+      height: 400px;
+      margin: 10px;
+      text-align: center;
+      font-family: arial;
+    }
 
-    <link rel="stylesheet" href="https://dimulo.com/dimulo-style.css">
+    /* Style the card images */
+    .card img {
+      width: 100%;
+      height: auto;
+    }
 
+    /* Style the card buttons */
+    .card button {
+      border: none;
+      outline: none;
+      padding: 12px 16px;
+      background-color: #f44336;
+      color: white;
+      cursor: pointer;
+    }
+
+    /* Position the card buttons at the bottom of the card */
+    .card button:hover {
+      background-color: #da190b;
+    }
+
+    /* Style the footer */
+    .footer {
+      background-color: #333;
+      padding: 10px;
+      text-align: center;
+      color: white;
+    }
+  </style>
 </head>
-
 <body>
 
-    <div class="container">
+<div class="header">
+  <h1>Dimulo Developer Portal</h1>
+</div>
 
-        <div class="header">
+<div class="navbar">
+  <a href="#">Home</a>
+  <a href="#">Features</a>
+  <a href="#">Pricing</a>
+  <a href="#">Support</a>
+</div>
 
-            <img src="https://dimulo.com/dimulo-logo.png" alt="Dimulo Logo" class="logo">
+<div class="main">
+  
+<h2>Get an enhanced experience with Dimulo Developer Portal</h2>
+<p>Dimulo Developer Portal is a premium subscription service that gives you access to advanced features and perks.</p>
 
-            <nav class="navbar">
+<div class="section">
+  
+<div class="card">
+<img src="https://cdn.discordapp.com/app-assets/264445053596991498/264445053596991498.png" alt="Classic" style="width:100%">
+<h1>Classic</h1>
+<p>$4.99/month</p>
+<p>Some text about this card.</p>
+<button>Subscribe</button>
+</div>
 
-                <ul class="nav-links">
+<div class="card">
+<img src="https://cdn.discordapp.com/app-assets/264445053596991498/264445053596991498.png" alt="Boost" style="width:100%">
+<h1>Boost</h1>
+<p>$9.99/month</p>
+<p>Some text about this card.</p>
+<button>Subscribe</button>
+</div>
 
-                    <li><a href="#">Download</a></li>
+<div class="card">
+<img src="https://cdn.discordapp.com/app-assets/264445053596991498/264445053596991498.png" alt="Yearly" style="width:100%">
+<h1>Yearly</h1>
+<p>$99.99/year</p>
+<p>Some text about this card.</p>
+<button>Subscribe</button>
+</div>
 
-                    <li><a href="#">Why Dimulo?</a></li>
+</div>
 
-                    <li><a href="#">Support</a></li>
+<div class="footer">
+<p>© Dimulo Inc. All rights reserved.</p>
+</div>
 
-                    <li><a href="#">Blog</a></li>
-
-                </ul>
-
-            </nav>
-
-            <button class="login-button">Login</button>
-
-        </div>
-
-        <div class="main">
-
-            <h1>Dimulo Developer Portal</h1>
-
-            <p>Join Dimulo today and get access to exclusive perks and features.</p>
-
-            <button class="subscribe-button">Subscribe Now</button>
-
-            <img src="https://dimulo.com/dimulo-screenshot.png" alt="Dimulo Screenshot" class="screenshot">
-
-        </div>
-
-        <div class="footer">
-
-            <p>© 2023 Dimulo. All rights reserved.</p>
-
-        </div>
-
-    </div>
+</div>
 
 </body>
-
 </html>
 
