@@ -1,38 +1,122 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        body {
+            background-color: #1a1a1a;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
 
-        @import url('https://fonts.googleapis.com/css?family=Roboto');
+        .toolbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background-color: #292929;
+        }
+
+        .logo {
+            margin-right: 10px;
+        }
+
+        .logo img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .links {
+            display: flex;
+            align-items: center;
+        }
+
+        .links a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .links a:last-child {
+            margin-right: 0;
+        }
+
+        .toolbar a:hover {
+            background-color: #4b157d;
+        }
+
+        .container {
+            max-width: 70%;
+            text-align: center;
+            padding: 40px;
+            background-color: #292929;
+            border-radius: 10px;
+        }
 
         h1 {
-
-            font-family: 'Roboto', sans-serif;
-
+            font-family: Arial, sans-serif;
             font-size: 40px;
-
+            color: #8600ff;
+            margin-top: 0;
         }
 
         p {
-
-            font-family: 'Roboto', sans-serif;
-
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            color: #ffffff;
+            margin-bottom: 30px;
         }
 
-    </style>
+        a.button {
+            display: block;
+            text-align: center;
+            font-size: 20px;
+            color: #ffffff;
+            background-color: #8600ff;
+            width: 300px;
+            margin: 0 auto;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
 
+        a.button:hover {
+            background-color: #5a00b3;
+        }
+    </style>
 </head>
 
 <body>
-
-    <h1>Info</h1>
-
-    <p>Dimulo is a simple alternative to Simulo, the original Algodoo remake. Our version of the popular physics sandbox is mobile-compatible, can be played locally from an html file, and has a modding api (request to make a mod in the dimulo server, <a href="https://discord.gg/fRnSsKUCSZ">link here</a>)</p>
-
+    <div class="toolbar">
+        <div class="logo">
+            <img src="https://cdn.discordapp.com/attachments/1122306439457808455/1122306885299752990/sketch1687297624006.png" alt="Logo">
+        </div>
+        <div class="links">
+            <a href="https://jack-john-joe.github.io/Dimulo/info.html">Info</a>
+            <a href="https://dsc.gg/dimulo">Dimulo Community</a>
+            <a href="https://Jack-john-joe.github.io/quickScript">quickScript</a>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Info</h1>
+        <p>Dimulo is a simple alternative to Simulo, the original Algodoo remake. Our version of the popular physics sandbox is mobile-compatible, can be played locally from an HTML file, and has a modding API (request to make a mod in the Dimulo server, <a href="https://discord.gg/fRnSsKUCSZ">link here</a>).</p>
+        <a class="button" href="https://jack-john-joe.github.io/Dimulo/info.html">Click here for more information</a>
+        <a class="button" href="https://Jack-john-joe.github.io/Dimulo/map.html">Click here to see the page map</a>
+    </div>
 </body>
 
 </html>
-
