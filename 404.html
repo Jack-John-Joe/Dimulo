@@ -1,7 +1,4 @@
-<!DOCTYPE html>
-<html>
-
-<head>
+<html><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
@@ -14,6 +11,45 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+        }
+
+        .toolbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background-color: #292929;
+        }
+
+        .logo img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .links {
+            display: flex;
+            align-items: center;
+            margin-left: 20px; /* Add margin to create space between logo and links */
+        }
+
+        .links a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .links a:last-child {
+            margin-right: 0;
+        }
+
+        .toolbar a:hover {
+            background-color: #4b157d;
         }
 
         .container {
@@ -59,11 +95,22 @@
 </head>
 
 <body>
+    <div class="toolbar">
+        <div class="logo">
+            <img src="https://cdn.discordapp.com/attachments/1122306439457808455/1122306885299752990/sketch1687297624006.png" alt="Logo">
+        </div>
+        <div class="links">
+            <a href="https://jack-john-joe.github.io/Dimulo/info.html">Info</a>
+            <a href="https://dsc.gg/dimulo">Dimulo Community</a>
+            <a href="https://Jack-john-joe.github.io/quickScript">quickScript</a>
+        </div>
+    </div>
     <div class="container">
         <h1>404 - Page Not Found</h1>
         <p>The page you are looking for does not exist.</p>
-        <a class="button" href="https://jack-john-joe.github.io/Dimulo/index.html">Go to Home Page</a>
+        <a class="button" href="https://jack-john-joe.github.io/Dimulo/info.html">Go to Homepage</a>
     </div>
-</body>
 
-</html>
+
+
+</body></html>
